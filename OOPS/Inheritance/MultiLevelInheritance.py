@@ -70,7 +70,7 @@ class Car(Vehicle):
         Returns a string containing all the details brand, model, makeYear, Type of Vehicle.
     """
 
-    def __init__(self, brand, model, makeYear, type) -> None:
+    def __init__(self, brand: str, model: str, makeYear: int, type: str) -> None:
         """
         Parameters
         ----------
