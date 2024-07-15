@@ -56,18 +56,18 @@ class Car(Vehicle):
     Attributes
     ----------
     brand : str
-        Brand of the Vehicle.
+        Brand of the Car.
     model : str
-        Model of the Vehicle.
+        Model of the Car.
     makeYear : int
-        Manufactured Year of the Vehicle.
+        Manufactured Year of the Car.
     type : str
-        Type of the Vehicle.
+        Type of the Car.
 
     Methods
     -------
     getDetails():
-        Returns a string containing all the details brand, model, makeYear, Type of Vehicle.
+        Returns a string containing all the details brand, model, makeYear, Type of Car.
     """
 
     def __init__(self, brand: str, model: str, makeYear: int, type: str) -> None:
@@ -75,11 +75,11 @@ class Car(Vehicle):
         Parameters
         ----------
         brand : str
-            Brand of the Vehicle.
+            Brand of the Car.
         model : str
-            Model of the Vehicle.
+            Model of the Car.
         makeYear : int
-            Manufactured Year of the Vehicle.
+            Manufactured Year of the Car.
         type : str
         """
         super().__init__(brand, model, makeYear, type)
@@ -91,18 +91,18 @@ class ElectricCar(Car):
     Attributes
     ----------
     brand : str
-        Brand of the Vehicle.
+        Brand of the Electric Car.
     model : str
-        Model of the Vehicle.
+        Model of the Electric Car.
     makeYear : int
-        Manufactured Year of the Vehicle.
+        Manufactured Year of the Electric Car.
     type : str
-        Type of the Vehicle.
+        Type of the Electric Car.
 
     Methods
     -------
     getDetails():
-        Returns a string containing all the details brand, model, makeYear, Type of Vehicle.
+        Returns a string containing all the details brand, model, makeYear, Type of Electric Car.
     """
 
     def __init__(self, brand, model, makeYear, type) -> None:
@@ -110,13 +110,13 @@ class ElectricCar(Car):
         Parameters
         ----------
         brand : str
-            Brand of the Vehicle.
+            Brand of the Electric Car.
         model : str
-            Model of the Vehicle.
+            Model of the Electric Car.
         makeYear : int
-            Manufactured Year of the Vehicle.
+            Manufactured Year of the Electric Car.
         type : str
-            Type of the Vehicle.
+            Type of the Electric Car.
         """
         super().__init__(brand, model, makeYear, type)
 
