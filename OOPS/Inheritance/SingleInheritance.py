@@ -60,7 +60,7 @@ class Person:
 
 class Employee(Person):
     """
-    A class used to represent a Employee.
+    A class used to represent a Employee(Child Class). Which is Inherited by Person(Parent Class).
     
     Attributes
     ----------
@@ -69,19 +69,20 @@ class Employee(Person):
     empId : int
         Employee Id of the Employee.
     age : int
-        Age of the Employee
+        Age of the Employee.
     gender : str
-        Gender of the Employee
+        Gender of the Employee.
     email : str
-        Email of the Employee
+        Email of the Employee.
     phoneNumber : int
-        Phone Number of the Employee
+        Phone Number of the Employee.
     address : str
-        Address of the Employee
+        Address of the Employee.
+
     Methods
     -------
     getDetails():
-        Returns a string containing all the details name, age, gender, email, phoneNumber, address of an Employee.
+        Returns a string containing all the details empId, name, age, gender, email, phoneNumber, address of an Employee.
     """
 
     def __init__(self, name: int, empId: int, age: int, gender: str, email: str, phoneNumber: int, address: str):
@@ -93,15 +94,15 @@ class Employee(Person):
         empId : int
             Employee Id of the Employee.
         age : int
-            Age of the Employee
+            Age of the Employee.
         gender : str
-            Gender of the Employee
+            Gender of the Employee.
         email : str
-            Email of the Employee
+            Email of the Employee.
         phoneNumber : int
-            Phone Number of the Employee
+            Phone Number of the Employee.
         address : str
-            Address of the Employee
+            Address of the Employee.
         """
 
         super().__init__(name, age, gender, email, phoneNumber, address)
@@ -112,7 +113,7 @@ class Employee(Person):
         Returns
         -------
         str
-            Returns a string containing all the details name, empId, age, gender, email, phoneNumber, address of an Employee.
+            Returns a string containing all the details empId, name, age, gender, email, phoneNumber, address of an Employee.
         """
         return f"EmpId: {self.empId}, {super().getDetails()}"
 
