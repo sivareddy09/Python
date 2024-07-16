@@ -108,6 +108,12 @@ class Calculation(Add, Sub):
         """
         super().__init__(input1, input2)
 
+    def __add__(self, other):
+        return Calculation(self.input1+other.input1, self.input2+other.input2)
+    
+    def __str__(self) -> str:
+        return f"Calculation(Input1: {self.input1}, Input2: {self.input2})"
+
 
 if __name__ == '__main__':
 
@@ -120,3 +126,7 @@ if __name__ == '__main__':
     calculation = Calculation(4, 2)
     print(calculation.addition())
     print(calculation.substraction())
+
+    calculation1 = Calculation(4, 2)
+    calculation2 = Calculation(1, 1)
+    print(calculation1.__add__(calculation2))
