@@ -1,0 +1,14 @@
+The word "polymorphism" means "many forms", and in programming it refers to methods/functions/operators 
+with the same name that can be executed on many objects or classes.
+
+There are ways to write:
+1. Duck Typing
+2. Method Overloading
+3. Operator Overloading
+4. Method Overriding
+
+1. Duck Typing
+---------------
+    -> It is used basically, because it allows the data types to be dynamic.
+    -> Python it self is a dynamically typed language.
+    -> It will check for the method is present or not for the class you are calling.
