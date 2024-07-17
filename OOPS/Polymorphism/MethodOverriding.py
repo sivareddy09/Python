@@ -69,7 +69,7 @@ class Employee(Person):
     Methods
     -------
     display():
-        Returns a string contains name, id, age, gender of the Person.
+        Returns a string contains name, id, age, gender of the Employee.
     """
 
     def __init__(self, name: str, id: int, age: int, gender: str) -> None:
@@ -77,13 +77,13 @@ class Employee(Person):
         Parameters
         ----------
         name : str
-            Name of the Person.
+            Name of the Employee.
 
         age : int
-            Age of the Person.
+            Age of the Employee.
 
         gender: str
-            Gender of the Person.
+            Gender of the Employee.
         """
         super().__init__(name, age, gender)
         self.id = id
@@ -93,7 +93,7 @@ class Employee(Person):
         Returns
         -------
         str
-            Returns a string contains name, id, age, gender of the Person.
+            Returns a string contains name, id, age, gender of the Employee.
         """
         return f"{super().display()}, Id: {self.id}"
     
