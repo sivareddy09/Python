@@ -15,12 +15,27 @@ There are ways to write:
 
     For Coding Example refer -> DuckTyping.py file
 
+2. Method Overloading
+---------------------
+    -> If one or more methods have the same name but different number of parameters or different types of parameters or both.
+    -> In Python method overloading will not be acheived directly. Even if we create multiple methods in same class, it will call the last defined method in the class.
+    -> There are other ways to acheive method overloading. But it will be acheived by creating one method.
+        1) By giving default value to the parameter.
+        2) Using *args as the parameter of the method.
+        3) Using multipledispatch python library.
+
+    For Coding Example refer -> MethodOverloadin.py
+
 
 3. Operator Overloading
 -----------------------
     -> Operator Overloading means giving extended meaning beyond their predefined meaning.
     -> As '+' operator can add two values either they are both integers or strings or floats or mix of them like one integer and one string vice versa.
     -> It is acheivable because '+' operator is overloaded by int class and str class.
-    -> In another way, If same built-in operator or function that shows different behaviour for objects of different classes is called operator overloading.
+    -> In another way, If same built-in operator or function that shows different behaviour for objects of different classes.
     
     For Coding Example refer -> OperatorOverloadin.py file
+
+4. Method Overriding
+--------------------
+    ->
