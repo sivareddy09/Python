@@ -18,13 +18,14 @@ There are ways to write:
 2. Method Overloading
 ---------------------
     -> If one or more methods have the same name but different number of parameters or different types of parameters or both.
-    -> In Python method overloading will not be acheived directly. Even if we create multiple methods in same class, it will call the last defined method in the class.
+    -> In Python method overloading will not be acheived directly. Even if we create multiple methods in same class, 
+        it will call the last defined method in the class.
     -> There are other ways to acheive method overloading. But it will be acheived by creating one method.
         1) By giving default value to the parameter.
         2) Using *args as the parameter of the method.
         3) Using multipledispatch python library.
 
-    For Coding Example refer -> MethodOverloadin.py
+    For Coding Example refer -> MethodOverloading.py
 
 
 3. Operator Overloading
@@ -38,4 +39,9 @@ There are ways to write:
 
 4. Method Overriding
 --------------------
-    ->
+    -> Method Overriding is an ability of any OOP language that allows a sub-class to provide specific implementation of a method that is 
+        already provided by on of its super-class.
+    -> When a method in a sub-class has same name, same parameters or signature and same return type(or sub-type) as a method in its super-class, 
+        then it is said to be Override the method in the super-class.
+
+    For Coding Example refer -> MethodOverriding.py file
