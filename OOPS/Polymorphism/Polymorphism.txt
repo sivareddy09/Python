@@ -12,3 +12,15 @@ There are ways to write:
     -> It is used basically, because it allows the data types to be dynamic.
     -> Python it self is a dynamically typed language.
     -> It will check for the method is present or not for the class you are calling.
+
+    For Coding Example refer -> DuckTyping.py file
+
+
+3. Operator Overloading
+-----------------------
+    -> Operator Overloading means giving extended meaning beyond their predefined meaning.
+    -> As '+' operator can add two values either they are both integers or strings or floats or mix of them like one integer and one string vice versa.
+    -> It is acheivable because '+' operator is overloaded by int class and str class.
+    -> In another way, If same built-in operator or function that shows different behaviour for objects of different classes is called operator overloading.
+    
+    For Coding Example refer -> OperatorOverloadin.py file
