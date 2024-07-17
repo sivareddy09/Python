@@ -79,6 +79,9 @@ class Employee(Person):
         name : str
             Name of the Employee.
 
+        id : int
+            Id of the Employee.
+
         age : int
             Age of the Employee.
 
