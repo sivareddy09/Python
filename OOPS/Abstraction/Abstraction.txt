@@ -1,0 +1,44 @@
+
+
+Data Abstraction:
+-----------------
+    -> Data Abstraction is used to hide irrelevent details from the user and show the details that are relevent
+       to the users.
+    -> Hiding complex implementation details while just showing oe exposing essential information and functionalities to users.
+    -> In python we can achieve data abstraction by using abstract classes and abstract classes can be created 
+       using abc(abstract base class) module and abstract method of abc class.
+
+Abstract Class:
+---------------
+    -> Abstract class is a class in which one or more abstract methods are defined.
+    -> When a method is defined inside the class without its implementation is known as abstract method.
+
+Abstract Method:
+----------------
+    -> Abstract method is not a default feature. To create abstract method and abstract classes 
+       we need to import "ABC" and "abstractmethod" from abc library.
+    -> Abstract method of the base class force its child class to write implementation of all the abstract methods 
+       defined in base class. if not implemented it will throw error.
+
+Concrete Method:
+----------------
+    -> Concrete methods are defined in an abstract base class with their complete implementation. These are required to avoid reprication of code in subclasses.
+    -> These are created in abstract classes if all of its child classes are having same implementation.
+
+Access Specifiers:
+------------------
+    1) Public: 
+            -> The members of a class that are declared public are easily accessible from any part of the program. 
+               All data members and member functions of a class are public by default.
+               Eg:- self.a
+    2) Protected:
+            -> The members of a class that are declared protected are only accessible to a class derived from it. 
+               Data members of a class are declared protected by adding a single underscore ‘_’ symbol before the data member of that class.
+               But in python public and protected can be accessed from any part of the program (but it is a conviction not a rule in python, 
+               if you declare it as a protected then don't use out side the class except in it's subclass)
+               Eg:- self._a
+    3) Private:
+            -> The members of a class that are declared private are accessible within the class only, private access modifier is the most secure access modifier. 
+               Data members of a class are declared private by adding a double underscore ‘__’ symbol before the data member of that class. 
+               But in python there is a way to access these called name mangling (object._classname__varibalename)
+               Eg:- self.__a
