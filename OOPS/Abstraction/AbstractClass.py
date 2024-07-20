@@ -172,6 +172,9 @@ if __name__ == '__main__':
     # print(employee.__age)
     # print(employee.__id)
 
+    # There is way to get them (private members of a class) called name mangling.
+    print(employee._Employee__id)
+
     # will not throw error but it is bad idea to use outside the class
     # print(employee._gender)
 
