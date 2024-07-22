@@ -10,9 +10,12 @@ class Employee(Person):
         return f"{super().display()}, EmployeeId: {self.__id}"
     
     def generateEmployeeId(self):
-        if len(self.firstName) <= 3 and len(self.lastName) <= 3:
-            return f"{self.firstName[0:]+self.generateX(4-len(self.firstName))+self.lastName[0:]+self.generateX(4-len(self.lastName))+str(randint(0, 1000))}"
-        return f"{self.firstName[:4]+self.lastName[:4]+str(randint(0, 1000))}"
+        return f"{self.__getPartOfName(self.firstName, 4)+self.__getPartOfName(self.lastName, 4)+str(randint(0, 1000))}"
+    
+    def __getPartOfName(self, name, numOfCharacters):
+        if len(name) <= numOfCharacters:
+            return str(name+self.generateX(numOfCharacters-len(name)))
+        return str(name[0:numOfCharacters])
 
     def generateX(self, value):
         return 'X'*value
@@ -22,6 +25,6 @@ if __name__ == '__main__':
     print(emp.display())
     # print(emp.generateEmployeeId())
     
-    emp1 = Employee("Siv", "Ged", "Male", 25)
+    emp1 = Employee("Si", "Ge", "Male", 25)
     print(emp1.display())
     # print(emp1.generateEmployeeId())
