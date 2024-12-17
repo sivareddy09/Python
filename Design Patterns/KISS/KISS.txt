@@ -1,0 +1,10 @@
+Calculator
+------------
+
+Creating Calculator class for simple math like addition and substraction functions is overkill
+
+
+Applying KISS on Cal
+-----------------------
+
+Created two functions for addition and substraction is simple
