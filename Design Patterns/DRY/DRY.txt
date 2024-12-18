@@ -1,0 +1,6 @@
+DRY - Don't Repeat Yourself
+-----------------------------
+It is a design principle which is software development best practice that aims to reduce code duplication and repetitive patterns.
+The abbrivation of DRY - Don't Repeat Yourself.
+It encourages developers to avoid duplicating in a system.
+The main idea behind DRY is to reduce redundancy and promote efficiency by ensuring that a particular piece of knowledge or logic exists in only one place within a codebase.
